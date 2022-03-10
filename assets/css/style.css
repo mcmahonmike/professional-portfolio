@@ -14,10 +14,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 #my-name {
-    font-size: 30px;
+    font-size: 22px;
+    background-color: antiquewhite;
 }
 
 nav {
@@ -30,4 +32,86 @@ nav a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+}
+
+#hero {
+   background-image: url('../images/construction-site.png');
+   background-size: cover;
+   padding: 60px 15px;
+}
+
+.about-content, .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 20px 20px 50px;
+    padding: 20px;
+    align-items: space-between;
+    align-content: space-evenly;
+    width: 50%;
+}
+
+.project-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 2px;
+    height: 250px;
+    width: 100%;
+    
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 2px;
+    height: 100px;
+    width: 50%;
+}
+
+/*#my-work {
+   
+    margin: 0 auto;
+    max-width: 1200px;
+   
+}*/
+
+.about, .work, .contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px auto;
+    padding-bottom: 50px;
+}
+
+.about-title, .work-title, .contact-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-right: solid 5px;
+    margin: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+.info {
+    justify-content: space-evenly;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 75%;
 }
