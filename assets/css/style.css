@@ -9,7 +9,7 @@ html, body {
 }
 
 header {
-    background-color: aqua;
+    background-color: rgb(31 72 108);
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,11 @@ header {
 
 #my-name {
     font-size: 22px;
-    background-color: antiquewhite;
+    border: solid;
+    border-color: white;
+    background-color: rgb(31 72 108);
+    padding: 0px 15px;
+    color: white;
 }
 
 nav {
@@ -29,15 +33,21 @@ nav {
 nav a {
     font-size: 24px;
     margin: 0 20px;
-    color: black;
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
 #hero {
-   background-image: url('../images/construction-site.png');
+   background-image: url('../images/blue-prints.png');
    background-size: cover;
    padding: 60px 15px;
+}
+
+#hero h1 {
+    color: yellow;
+    margin: 30px 80px 10px 100px;
+    text-align: right;
 }
 
 .about-content, .info {
@@ -51,6 +61,14 @@ nav a {
     width: 50%;
 }
 
+.about-content img {
+    width: 40%;
+    position: relative;
+    right: 40%;
+    border: none;
+    border-radius: 25%;
+}
+
 .project-one {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +77,7 @@ nav a {
     background-color: black;
     color: white;
     margin: 2px;
-    height: 250px;
+    height: 400px;
     width: 100%;
     
 }
@@ -88,8 +106,14 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 20px auto;
+    margin: 0px auto;
     padding-bottom: 50px;
+    background-color:rgb(196 220 227) ;
+}
+
+.work-title {
+    position: relative;
+    left: 20px;
 }
 
 .about-title, .work-title, .contact-title {
