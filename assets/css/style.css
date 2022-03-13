@@ -2,10 +2,21 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+:root {
+    --primaryColor:rgb(31 72 108);
+    --baseColor:rgb(196 220 227) ;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.flex-one, .flex-two {
+    display: flex;
+    flex: wrap;
+    width: 100%;
 }
 
 header {
@@ -14,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
 }
 
 #my-name {
@@ -69,6 +80,12 @@ nav a {
     border-radius: 25%;
 }
 
+.about-content p {
+    position: relative;
+    left: 200px;
+    bottom: 200px;
+}
+
 .project-one {
     display: flex;
     flex-wrap: wrap;
@@ -76,9 +93,12 @@ nav a {
     flex-direction: column;
     background-color: black;
     color: white;
-    margin: 2px;
+    margin: 20px;
     height: 400px;
     width: 100%;
+    border: solid 10px;
+    border-color: var(--primaryColor);
+    opacity: 0.5;
     
 }
 
@@ -90,19 +110,36 @@ nav a {
     flex-direction: column;
     background-color: black;
     color: white;
-    margin: 2px;
-    height: 100px;
-    width: 50%;
+    margin: 20px;
+    height: 150px;
+    width: 415px;
+    border: solid 10px;
+    border-color: var(--primaryColor);
+    opacity: 0.5;
 }
 
-/*#my-work {
-   
-    margin: 0 auto;
-    max-width: 1200px;
-   
-}*/
+.project, .projects a {
+    text-decoration: none;
+    color: white;
+}
 
-.about, .work, .contact{
+
+.project:hover, .project-one:hover {
+    opacity: 1;
+    transition: .5s;
+
+}
+
+#my-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 ;
+    background-color:rgb(196 220 227) ;
+
+
+}
+
+.about, .contact{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
