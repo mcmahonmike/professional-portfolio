@@ -17,6 +17,8 @@ html, body {
     display: flex;
     flex: wrap;
     width: 100%;
+    margin: 15px;
+    justify-content: space-between;
 }
 
 header {
@@ -91,8 +93,8 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background: url(../images/run_buddy.png);
+    background-size: 100%;
     margin: 20px;
     height: 400px;
     width: 100%;
@@ -108,8 +110,8 @@ nav a {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background: url(../images/project-img.png);
+    background-size: 100%;
     margin: 20px;
     height: 150px;
     width: 415px;
@@ -120,7 +122,9 @@ nav a {
 
 .project, .projects a {
     text-decoration: none;
-    color: white;
+    background-color: var(--baseColor);
+    color: yellow;
+    margin: 4px;
 }
 
 
@@ -175,4 +179,57 @@ nav a {
     justify-content: flex-start;
     flex-direction: row;
     width: 75%;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+  }
+
+
+    .about-content p {
+        left: 160px;
+
+    }
+    
+    .flex-one, .flex-two {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content p {
+        left: 180px;
+        top: -150px;
+    }
+
+    .projects {
+        flex: 0 90%;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    .work-title, .contact-title, .about-title {
+        flex: 0 100%;
+    }
+
+    nav {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .projects {
+        flex: 0 100%;
+    }
+
+    nav {
+        flex: 0 100%;
+    }
 }
